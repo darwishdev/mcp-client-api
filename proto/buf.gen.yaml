@@ -1,0 +1,17 @@
+version: v2
+clean: true
+managed:
+  enabled: true
+  disable:
+    - file_option: go_package
+      module: buf.build/bufbuild/protovalidate
+  override:
+    - file_option: go_package_prefix
+      value: github.com/darwishdev/mcp-client-api/proto_gen
+plugins:
+  - local: protoc-gen-go
+    out: ../proto_gen
+    opt: paths=source_relative
+  - local: protoc-gen-connect-go
+    out: ../proto_gen/
+    opt: paths=source_relative

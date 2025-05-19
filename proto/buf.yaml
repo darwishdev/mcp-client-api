@@ -1,0 +1,20 @@
+
+version: v2
+modules:
+  # Define the main module path. Typically, this is where your `.proto` files are located.
+  - path: .
+    name: buf.build/ahmeddarwish/mcp-client-api
+
+deps:
+  # Dependencies for the module. Ensure they are specified in the correct format.
+  - buf.build/bufbuild/protovalidate
+
+lint:
+  # Use the same linting rules from your v1 configuration.
+  use:
+    - STANDARD
+
+breaking:
+  # Use the same breaking rules from your v1 configuration.
+  use:
+    - FILE

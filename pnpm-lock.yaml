@@ -1,0 +1,31 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@buf/ahmeddarwish_mcp-client-api.bufbuild_es':
+        specifier: 2.4.0-20250518160830-3bc6a6575c46.1
+        version: 2.4.0-20250518160830-3bc6a6575c46.1(@bufbuild/protobuf@2.4.0)
+
+packages:
+
+  '@buf/ahmeddarwish_mcp-client-api.bufbuild_es@2.4.0-20250518160830-3bc6a6575c46.1':
+    resolution: {tarball: https://buf.build/gen/npm/v1/@buf/ahmeddarwish_mcp-client-api.bufbuild_es/-/ahmeddarwish_mcp-client-api.bufbuild_es-2.4.0-20250518160830-3bc6a6575c46.1.tgz}
+    peerDependencies:
+      '@bufbuild/protobuf': ^2.4.0
+
+  '@bufbuild/protobuf@2.4.0':
+    resolution: {integrity: sha512-RN9M76x7N11QRihKovEglEjjVCQEA9PRBVnDgk9xw8JHLrcUrp4FpAVSPSH91cNbcTft3u2vpLN4GMbiKY9PJw==}
+
+snapshots:
+
+  '@buf/ahmeddarwish_mcp-client-api.bufbuild_es@2.4.0-20250518160830-3bc6a6575c46.1(@bufbuild/protobuf@2.4.0)':
+    dependencies:
+      '@bufbuild/protobuf': 2.4.0
+
+  '@bufbuild/protobuf@2.4.0': {}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package mcpclient.v1;
+
+message SendMessageRequest {
+  string content = 1;
+
+  string instructions = 2;
+  string role = 3;
+}
+
+message SendMessageResponse {
+  string content = 1;
+  repeated string used_tools = 3;
+}
+
+service McpClientService {
+  rpc SendMessage(SendMessageRequest) returns (stream SendMessageResponse);
+}
